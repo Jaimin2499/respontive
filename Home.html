@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="https://cdn.pixabay.com/photo/2017/01/09/20/17/wireless-technology-1967494_1280.jpg" style="width: 100px;height: 100px;" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+            </nav>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" style="width: 60px;height: 60px; " class="menu" onclick="togglemenu()"></div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Quick Services from</h2>
+                <h2> the best team</h2>
+                <h4>The best experience in the wolrd.</h4>
+                <button type="button">Book Now </button>
+            </div>
+            <div class="col-2">
+                <img src="https://cdn.pixabay.com/photo/2020/02/22/17/53/communication-4871245_1280.jpg">
+            </div>
+        </div>
+
+        <div class="social">
+            <img src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png">
+            <img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-articleLarge-v4.jpg?quality=75&auto=webp&disable=upscale">
+            <img src="https://parentzone.org.uk/sites/default/files/Instagram%20logo.jpg">
+        </div>
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "115px"
+            } else {
+                menulist.style.maxHeight = "0px"
+
+            }
+        }
+    </script>
+</body>
+
+</html>
